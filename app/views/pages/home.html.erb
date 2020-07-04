@@ -1,0 +1,8 @@
+<h1>Home Pages</h1>
+<% @posts.each do|post|  %>
+<h3><%= "Title:"+post.title  %></h3>
+<p><%=  "Decription: "+post.body %></p>
+<p><%= "Created at: "+post.created_at.to_s  %></p>
+<%end%>
+
+<%= link_to 'new blog', new_blog_path %>
