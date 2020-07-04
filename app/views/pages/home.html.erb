@@ -4,6 +4,18 @@
 <p><%=  "Decription: "+post.body %></p>
 <p><%= "Created at: "+post.created_at.to_s  %></p>
 <%end%>
+<h2>Portfolio</h2>
+<% @portfolio.each do|portfolio|  %>
+<h3><%= "Title:"+portfolio.title  %></h3>
+<p>
+<img src="<%= portfolio.main_image %>"/>
+</p>
+<h4><%= "Subtitle:"+portfolio.subtitle  %></h4>
+<p>
+<img src="<%= portfolio.thumb_image %>"/>
+</p>
+<p><%=  "Body: "+portfolio.body %></p>
+<%end%>
 
 <h3>Skills</h3>
 <%= @skills.inspect %>
