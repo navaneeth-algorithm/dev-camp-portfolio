@@ -1,0 +1,15 @@
+current directory: /media/navaneeth/Coder/ProgrammingLanguage/RubyonRails/TestRubyOnRails/devcamp_protfolio/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/home/navaneeth/.rbenv/versions/2.7.1/bin/ruby -I /home/navaneeth/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200703-21754-10pl7n4.rb extconf.rb
+creating Makefile
+
+current directory: /media/navaneeth/Coder/ProgrammingLanguage/RubyonRails/TestRubyOnRails/devcamp_protfolio/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /media/navaneeth/Coder/ProgrammingLanguage/RubyonRails/TestRubyOnRails/devcamp_protfolio/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /media/navaneeth/Coder/ProgrammingLanguage/RubyonRails/TestRubyOnRails/devcamp_protfolio/vendor/cache/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20200703-21754-a5jfgn/skiptrace/internal
