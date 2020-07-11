@@ -7,13 +7,18 @@ class PortfoliosController < ApplicationController
         @portfolio = Portfolio.new
     end
 
+    def angular
+        @portfolioangular = Portfolio.angular
+
+    end
+
     def create
         @portfolio = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
         respond_to do |format|
             if @portfolio.save
                 format.html { redirect_to portfolios_path, notice: 'Portfolio created' }
             else
-                format.html {redirect_to :new}
+                format.html {redirect_to new_portfolio_path}
             end
             
         end

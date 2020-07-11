@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get 'portfolio/:id', to:'portfolios#show', as: 'portfolio_show'
   get 'about-me' , to: 'pages#about'
   get 'contact' , to:'pages#contact'
+
+  get 'angular-portfolio', to:'portfolios#angular'
   resources :blogs
 
   root to:'pages#home'
